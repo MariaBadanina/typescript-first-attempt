@@ -1,0 +1,6 @@
+{
+  "eslint.debug": true,
+  "javascript.format.semicolons": "remove",
+  "typescript.format.semicolons": "remove",
+  "prettier.semi": false
+}
