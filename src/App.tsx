@@ -1,8 +1,7 @@
 import React from 'react'
 import './App.css'
+import MainContainer from './containers/MainContainer'
 
-function App() {
-  return <>App</>
-}
+const App = () => <MainContainer />
 
 export default App
