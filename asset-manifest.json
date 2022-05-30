@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/z1-frontend-developer/static/css/main.9aaa7bac.css",
+    "main.js": "/z1-frontend-developer/static/js/main.eca06796.js",
+    "static/media/camera_bg.png": "/z1-frontend-developer/static/media/camera_bg.a1c9cfca0f0e544d94ae.png",
+    "static/media/id_card.png": "/z1-frontend-developer/static/media/id_card.f892d793713e2cf93db3.png",
+    "static/media/light.svg": "/z1-frontend-developer/static/media/light.4e33b28b41fab1558d87ac73bd707cc6.svg",
+    "static/media/id_bg.svg": "/z1-frontend-developer/static/media/id_bg.a826b8dc40e3a9ccb9a4d41936c849b7.svg",
+    "static/media/accepted.svg": "/z1-frontend-developer/static/media/accepted.0a597c70034a25aec6facfdb30072a39.svg",
+    "static/media/white_cross.svg": "/z1-frontend-developer/static/media/white_cross.4091893d9dabdaf245988431397e1fdd.svg",
+    "static/media/white_tick.svg": "/z1-frontend-developer/static/media/white_tick.f6593ae5198c9747b1d61c3cd1f67ef9.svg",
+    "index.html": "/z1-frontend-developer/index.html",
+    "main.9aaa7bac.css.map": "/z1-frontend-developer/static/css/main.9aaa7bac.css.map",
+    "main.eca06796.js.map": "/z1-frontend-developer/static/js/main.eca06796.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9aaa7bac.css",
+    "static/js/main.eca06796.js"
+  ]
+}
