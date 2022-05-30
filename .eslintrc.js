@@ -17,5 +17,7 @@ module.exports = {
     'object-curly-newline': [0],
     'no-unused-vars': [0],
     'eol-last': 0,
+    'arrow-body-style': [0],
+    'no-nested-ternary': [0],
   },
 }

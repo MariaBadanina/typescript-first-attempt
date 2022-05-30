@@ -1,9 +1,13 @@
 import React from 'react'
-import { StyledButton } from './styles'
+import { StyledButton, ButtonWrapper } from './styles'
 import { ButtonProps } from './types'
 
-const Button = ({ text, to }: ButtonProps) => (
-  <StyledButton to={to}>{text}</StyledButton>
+const Button = ({ text, to, color, shadow }: ButtonProps) => (
+  <ButtonWrapper color={shadow}>
+    <StyledButton to={to} color={color}>
+      {text}
+    </StyledButton>
+  </ButtonWrapper>
 )
 
 export default Button

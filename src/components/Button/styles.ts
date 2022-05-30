@@ -1,12 +1,16 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
+export const ButtonWrapper = styled.div`
+  box-shadow: ${(props) => props.color};
+  border-radius: 24px;
+`
+
 export const StyledButton = styled(Link)`
   height: 48px;
   width: 160px;
-  box-shadow: 0 10px 20px -5px rgba(47, 0, 121, 0.3);
   border-radius: 24px;
-  background-color: #2f0079;
+  background-color: ${(props) => props.color};
   color: #fff;
   border: none;
   font-family: Roboto;
@@ -18,4 +22,6 @@ export const StyledButton = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
+  margin: 0 auto;
 `
