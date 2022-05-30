@@ -3,6 +3,7 @@ import { ContentContainer, ImageBG } from './styles'
 import Header from '../../components/Header'
 import Button from '../../components/Button'
 import TextContainer from '../../components/TextContainer'
+import ResultScreen from '../../components/ResultScreen'
 
 const HomeScreen = () => {
   const [validationState, setValidationState] = useState<string | null>('')
@@ -22,9 +23,9 @@ const HomeScreen = () => {
           color="#000"
         />
         {validationState && validationState === 'Approved' ? (
-          <div style={{ border: '10px solid green' }}>Approved</div>
+          <ResultScreen validation={validationState} text="Approved" />
         ) : validationState === 'Too Much Glare' ? (
-          <div style={{ border: '10px solid red' }}>Too Much Glare</div>
+          <ResultScreen validation={validationState} text="Rejected" />
         ) : (
           <ImageBG>
             <Button

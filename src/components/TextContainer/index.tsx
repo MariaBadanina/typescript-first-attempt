@@ -1,11 +1,11 @@
 import React from 'react'
-import { Text, Title, Container } from './styles'
+import { Description, Title, Container } from './styles'
 import { TextProps } from './types'
 
 const TextContainer = ({ titleText, descriptionText, color }: TextProps) => (
   <Container color={color}>
     <Title>{titleText}</Title>
-    <Text>{descriptionText}</Text>
+    <Description>{descriptionText}</Description>
   </Container>
 )
 

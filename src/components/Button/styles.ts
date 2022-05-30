@@ -8,7 +8,8 @@ export const ButtonWrapper = styled.div`
 
 export const StyledButton = styled(Link)`
   height: 48px;
-  width: 160px;
+  width: fit-content;
+  padding: 0 22px;
   border-radius: 24px;
   background-color: ${(props) => props.color};
   color: #fff;

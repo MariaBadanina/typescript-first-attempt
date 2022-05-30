@@ -19,5 +19,8 @@ module.exports = {
     'eol-last': 0,
     'arrow-body-style': [0],
     'no-nested-ternary': [0],
+    indent: [0],
+    'no-tabs': 0,
+    'operator-linebreak': 0,
   },
 }

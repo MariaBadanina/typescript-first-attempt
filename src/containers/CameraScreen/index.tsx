@@ -12,7 +12,6 @@ const CameraScreen = () => (
         descriptionText="Fit your ID card inside the frame. The picture will be taken automatically."
         color="#fff"
       />
-
       <IDScan />
       <Button text="Cancel" to="/" color="transparent" shadow="none" />
     </ContentContainer>

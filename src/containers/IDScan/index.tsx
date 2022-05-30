@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { getResponse } from '../../utils/getResponse'
+import ScanScreen from '../../components/ScanScreen'
+import { Text, TextContainer } from './styles'
+import { ReactComponent as ApprovedIcon } from '../../assets/accepted.svg'
+import { ReactComponent as Light } from '../../assets/light.svg'
 
 const IDScan = () => {
   const [data, setData] = useState('')
@@ -15,20 +19,25 @@ const IDScan = () => {
       sessionStorage.setItem('response', data)
       setTimeout(() => {
         history('/')
-      }, 1000)
+      }, 2000)
     }
   }, [data])
 
   return (
-    <div>
+    <>
+      <ScanScreen validation={data} />
       {data === 'Approved' ? (
-        <div style={{ border: '10px solid green' }}>{data}</div>
-      ) : data === 'Too Much Glare' ? (
-        <div style={{ border: '10px solid red' }}>{data}</div>
-      ) : (
-        <div style={{ border: '10px solid yellow' }}>Animation</div>
+        <TextContainer>
+          <ApprovedIcon />
+          <Text>Picture taken</Text>
+        </TextContainer>
+      ) : data === 'Too Much Glare' ? null : (
+        <TextContainer>
+          <Light />
+          <Text>Room lighting is too low</Text>
+        </TextContainer>
       )}
-    </div>
+    </>
   )
 }
 

@@ -17,7 +17,7 @@ export const Title = styled.h1`
   font-weight: bold;
   margin: 0;
 `
-export const Text = styled.p`
+export const Description = styled.p`
   ${textStyles};
   font-size: 16px;
 `
